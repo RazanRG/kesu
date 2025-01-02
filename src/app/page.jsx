@@ -1,8 +1,8 @@
 import AnimeList from "@/app/components/AnimeList"
+import { getKomikRespo } from "./libs/api-libs"
 
 const page = async () => {
-const response = await fetch(`${process.env.API_URL}/komiku`)
-const anime = await response.json()
+const anime = await getKomikRespo("komiku")
 
   return (
      <div>

@@ -4,6 +4,9 @@ const nextConfig = {
         remotePatterns: [
             {
                 hostname: "cover.komiku.id"
+            },
+            {
+                hostname: "cdn.komiku.id"
             }
         ]
     }

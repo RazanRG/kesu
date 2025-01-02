@@ -1,6 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/app/components/Utilities/Navbar"
+import Footer from "./components/Utilities/Footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -14,8 +15,8 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "KESUKOMIK",
-  description: "Kesukomik adalah website baca manga gratis tanpa bayar dan iklan",
+  title: "KESOKOMIK",
+  description: "Kesokomik adalah website baca manga gratis tanpa bayar dan iklan",
 };
 
 export default function RootLayout({ children }) {
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
       >
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
